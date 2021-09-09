@@ -10,9 +10,8 @@ public class GameMechanics {
     public void comparer(String playerMove) {
         String computerMove = setComputerMove();
 
-
         if (playerMove.equals(computerMove)) {  //IF EVEN
-            System.out.println(" ");
+            System.out.println(" ");  //line for easier reading
             System.out.println("The game is even!");
             history.history.add("EVEN");
             System.out.println(" "); //creating an empty line for easier reading
@@ -20,16 +19,16 @@ public class GameMechanics {
         } else if (playerMove.equals("Rock") && computerMove.equals("Scissor")  //IF PLAYER WINS
                 || playerMove.equals("Paper") && computerMove.equals("Rock")
                 || playerMove.equals("Scissor") && computerMove.equals("Paper")) {
-            System.out.println(" ");
+            System.out.println(" "); //line for easier reading
             System.out.println("You win!");
             history.history.add("WIN");
             System.out.println(" "); //creating an empty line for easier reading
             afterMatchMenu.afterMatchMenu();
         } else {                                                             //IF WE LOSE
-            System.out.println(" ");
+            System.out.println(" ");  //line for easier reading
             System.out.println("YOU LOST!");
-            history.history.add("LOSS");
-            System.out.println(" ");  //creating an empty line for easier reading
+            history.history.add("LOSS");  //line for easier reading
+            System.out.println(" ");  //line for easier reading
             afterMatchMenu.afterMatchMenu();
         }
 
