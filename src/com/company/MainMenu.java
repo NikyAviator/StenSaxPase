@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MainMenu {
     Scanner input = new Scanner(System.in); //Created the first scanner class
     int menuChoice = 0;
+    History history = new History();
     void Menu() {    //created a method for Class
         TheActualGame theActualGame = new TheActualGame(); //created a new object of TheActualGame called theActualGame
 
@@ -16,11 +17,12 @@ public class MainMenu {
                 theActualGame.game();
                 break;
             case 2:
-                //TODO HISTORY
+                history.history();
+                Menu();
                 break;
 
             case 3:
-                //TODO AVSLUTA SPELET
+                System.out.println("Quitting game");
                 break;
         }
 

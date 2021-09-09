@@ -18,7 +18,7 @@ public class AfterGameMenu {
                 theActualGame.game();
                 break;
             case 3:             //Closes the game
-
+                System.out.println("Quitting game");
                 break;
         }
     }
