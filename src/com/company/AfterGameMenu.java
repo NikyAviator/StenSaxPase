@@ -20,6 +20,11 @@ public class AfterGameMenu {
             case 3:             //Closes the game
                 System.out.println("Quitting game");
                 break;
+            default:
+                System.out.println("Invalid Input"); //if we press anything else than 1-3 we get a text and we invoke afterMatchMenu() method.
+                afterMatchMenu();
+                break;
+
         }
     }
 }
