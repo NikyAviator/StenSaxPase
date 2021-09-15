@@ -12,7 +12,7 @@ public class GameMechanics {
 
         if (playerMove.equals(computerMove)) {  //IF EVEN
             System.out.println(" ");  //line for easier reading
-            System.out.println("The game is even!"); //prints this message if even game
+            System.out.println("IT'S EVEN!"); //prints this message if even game
             history.history.add("EVEN");  //adding the value 'EVEN' to the arraylist
             System.out.println(" "); //creating an empty line for easier reading
             afterMatchMenu.afterMatchMenu();  //invokes afterMatchMenu() method
@@ -20,7 +20,7 @@ public class GameMechanics {
                 || playerMove.equals("Paper") && computerMove.equals("Rock")
                 || playerMove.equals("Scissor") && computerMove.equals("Paper")) {
             System.out.println(" "); //line for easier reading
-            System.out.println("You win!");  //prints this message if we win
+            System.out.println("YOU WIN!");  //prints this message if we win
             history.history.add("WIN"); //adding the value 'WIN' to the arraylist
             System.out.println(" "); //creating an empty line for easier reading
             afterMatchMenu.afterMatchMenu();  //invokes afterMatchMenu() method
