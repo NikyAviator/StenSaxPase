@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class MainMenu {
     Scanner input = new Scanner(System.in); //Created the first object of the Scanner class
-    int menuChoice = 0;
+    int menuChoice = 0;  //we set an initial value for our menuChoice '0'
     History history = new History();  //Create an object of the class 'History'
-    void Menu() {    //created a method for Class
+    void Menu() {    //Menu method
         TheActualGame theActualGame = new TheActualGame(); //created a new object of TheActualGame called theActualGame
 
         System.out.println("Choose one of the following alternatives and press ENTER: ");  //Initial text for choice
@@ -22,10 +22,10 @@ public class MainMenu {
                 break;
 
             case 3:
-                System.out.println("Quitting game");  //If we press '3' we terminate the game with a String that is printed
+                System.out.println("Quitting game");  //If we press '3' we terminate the game with a string that is printed
                 break;
-            default:
-                System.out.println("Invalid Input");  //if we press anything else than 1-3 we get a text and we invoke Menu() method.
+            default:                                //if we press anything else than 1-3 we get a string and we invoke Menu() method.
+                System.out.println("Invalid Input");
                 Menu();
                 break;
         }

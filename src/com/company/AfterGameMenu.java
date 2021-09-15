@@ -8,10 +8,10 @@ public class AfterGameMenu {
     void afterMatchMenu() {
         MainMenu mainMenu = new MainMenu();  //create an object of class MainMenu so that we can go back
         TheActualGame theActualGame = new TheActualGame(); //create an object of class TheActualGame so we can return to game()
-        System.out.println("1. Menu 2. Play again 3. Close the game");
+        System.out.println("1. Menu 2. Play again 3. Close the game"); //displayed options
         int afterGameMenuChoice = input.nextInt();
         switch (afterGameMenuChoice) {
-            case 1:             //case1 getting back to MainMenu
+            case 1:             //case1 invoking Menu() method
                 mainMenu.Menu();
                 break;
             case 2:             //case2 Play again!
